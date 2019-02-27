@@ -1,0 +1,137 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "data_identifier",
+				"type": "string"
+			},
+			{
+				"name": "data",
+				"type": "string"
+			},
+			{
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"name": "geo_coordinates",
+				"type": "string"
+			},
+			{
+				"name": "land_dimensions",
+				"type": "string"
+			}
+		],
+		"name": "createRecord",
+		"outputs": [
+			{
+				"name": "isCreated",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "user_address",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "record_number",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "data_identifier",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "data",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "geo_coordinates",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "land_dimensions",
+				"type": "string"
+			}
+		],
+		"name": "recordCreation",
+		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "user_address",
+				"type": "address"
+			}
+		],
+		"name": "noOfUserRecords",
+		"outputs": [
+			{
+				"name": "noOfRecords",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "user_address",
+				"type": "address"
+			},
+			{
+				"name": "record_number",
+				"type": "uint256"
+			}
+		],
+		"name": "showRecordByKeys",
+		"outputs": [
+			{
+				"name": "data_identifier",
+				"type": "string"
+			},
+			{
+				"name": "data",
+				"type": "string"
+			},
+			{
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"name": "geo_coordinates",
+				"type": "string"
+			},
+			{
+				"name": "land_dimensions",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
